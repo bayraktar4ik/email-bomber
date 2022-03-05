@@ -26,6 +26,6 @@
       - b:\rus_email_spam\fuckers_emails_1\:/dir <- шлях до директорії з імейлами і html
       - /target/bayraktar-email-0.0.1-SNAPSHOT.jar:/ROOT.war
 
-10. виконати з командного рядка 
+10. виконати з командного рядка (у тій же директорії де знаходиться файл docker-compose.yaml)
     docker-compose up -d
 
