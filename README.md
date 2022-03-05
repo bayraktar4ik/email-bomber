@@ -29,3 +29,4 @@
 10. виконати з командного рядка (у тій же директорії де знаходиться файл docker-compose.yaml)
     docker-compose up -d
 11. успішний результат - наявні надіслані листи у скриньці
+12. Для координації використовуєм табличку. Якщо якісь чанки вже помічено кольором, берем вільні https://docs.google.com/spreadsheets/d/1iaf4BeV77u8WwlzItKImUCsbftA2nYhfctfLaLARlpg/edit?usp=sharing
