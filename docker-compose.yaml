@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   springboot-app:
-    image: bayraktar/email
+    image: predatorro/dockerhub:bayraktar
     hostname: cp
     container_name: cp-bayraktar-email
     ports:
@@ -18,7 +18,7 @@ services:
       - body=/dir/Collection_ANTIWAR/111111.html
       - emails=/dir/mail_RU_part1.txt
       - bombSize=50
-      - chunk=4
+      - chunk=123
     volumes:
       - b:\rus_email_spam\fuckers_emails_1\:/dir
       - /target/bayraktar-email-0.0.1-SNAPSHOT.jar:/ROOT.war
