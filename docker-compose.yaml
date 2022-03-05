@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  springboot-app:
+    image: bayraktar/email
+    hostname: cp
+    container_name: cp-bayraktar-email
+    ports:
+      - "5005:5005"
+    environment:
+      - mail.smtp.auth=true
+      - mail.smtp.starttls.enable=true
+      - mail.smtp.host=smtp.gmail.com
+      - mail.smtp.port=587
+      - mail.smtp.ssl.trust=smtp.gmail.com
+      - email=rusinfo200@gmail.com
+      - password=tjprlhvkoqtcqlib
+      - subject="Военное положение в России"
+      - body=/dir/Collection_ANTIWAR/111111.html
+      - emails=/dir/mail_RU_part1.txt
+      - bombSize=50
+      - chunk=4
+    volumes:
+      - b:\rus_email_spam\fuckers_emails_1\:/dir
+      - /target/bayraktar-email-0.0.1-SNAPSHOT.jar:/ROOT.war
+    command: [ "java", "-jar",
+               "-Dspring.profiles.active=prod",
+               "ROOT.war" ]
