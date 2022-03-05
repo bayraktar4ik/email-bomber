@@ -6,7 +6,7 @@
 5. Створіть скриньку(и) у gmail
 6. Включіть 2-факторну аутентифікацію -> Обліковий запис - Безпека - Вхід в обліковий запис Google - Двохетапна перевірка
 7. Створіть пароль додатка -> Обліковий запис - Безпека - Вхід в обліковий запис Google - Паролі додатків
-8. Скачайте https://github.com/bayraktar4ik/email-bomber/blob/main/docker-compose.yaml
+8. Скачайте https://github.com/bayraktar4ik/email-bomber/blob/main/docker-compose.yaml (https://www.wikihow.com/Download-a-File-from-GitHub)  
 9. змініть відповідно до своїх налаштувань (приклад для gmail, якщо створюєте скриньку у іншому сервісі - smtp налаштування теж мають бути змынені)
 
  environment:  
